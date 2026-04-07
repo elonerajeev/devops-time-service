@@ -1,4 +1,4 @@
-# 🕐 SimpleTimeService — Particle41 DevOps Challenge
+#  SimpleTimeService — Particle41 DevOps Challenge
 
 A production-grade, cloud-native microservice that returns the current timestamp and visitor IP — deployed on AWS EKS using Terraform, Docker, Kubernetes, and GitHub Actions CI/CD.
 
@@ -10,7 +10,7 @@ A production-grade, cloud-native microservice that returns the current timestamp
 devops-time-service/
 ├── web-app/                    # Node.js application
 │   ├── server.js               # Main app — returns timestamp + IP
-│   ├── Dockerfile              # Multi-stage, non-root container build
+│   ├── Dockerfile              # Multi-stage, non-root container
 │   ├── package.json
 │   └── .dockerignore
 ├── terraform/                  # Infrastructure as Code (IaC)
@@ -82,7 +82,7 @@ GitHub push → GitHub Actions CI/CD
 
 ---
 
-## ✅ Requirements Checklist
+##  Requirements Checklist
 
 | Requirement | Status | Details |
 |---|---|---|
@@ -124,14 +124,7 @@ aws configure
 # Enter your: AWS Access Key ID, Secret Access Key, Region (us-east-1), Output format (json)
 ```
 
-**Option B — Environment variables (for CI or temporary use):**
-```bash
-export AWS_ACCESS_KEY_ID=your_access_key
-export AWS_SECRET_ACCESS_KEY=your_secret_key
-export AWS_DEFAULT_REGION=us-east-1
-```
-
-> ⚠️ **Never commit credentials to git.** Use IAM roles or environment variables only.
+>  **Never commit credentials to git.** Use IAM roles or environment variables only.
 
 ---
 
