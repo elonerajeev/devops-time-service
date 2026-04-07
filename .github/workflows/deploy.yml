@@ -25,12 +25,14 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t $DOCKER_USERNAME/$IMAGE_NAME:$IMAGE_TAG ./web-app
+        docker build -t $DOCKER_USERNAME/$IMAGE_NAME:$IMAGE_TAG \
+                 -t $DOCKER_USERNAME/$IMAGE_NAME:latest \
+                 ./web-app
 
     - name: Push Docker Image
       run: |
         docker push $DOCKER_USERNAME/$IMAGE_NAME:$IMAGE_TAG
-
+        docker push $DOCKER_USERNAME/$IMAGE_NAME:latest
 
 
 # 2. TERRAFORM INFRASTRUCTURE

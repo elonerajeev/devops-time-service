@@ -1,6 +1,6 @@
 region                         = "us-east-1"
 vpc_cidr                       = "10.0.0.0/16"
-cluster_name                   = "devops-time-servic-eks"
+cluster_name                   = "devops-time-service-eks"
 kubernetes_version             = "1.29"
 availability_zones             = ["us-east-1a", "us-east-1b"]
 private_subnet_cidrs           = ["10.0.1.0/24", "10.0.2.0/24"]
