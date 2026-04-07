@@ -1,4 +1,4 @@
-name: CI/CD Pipeline for automatic deployement
+name: CI/CD Pipeline for automatic deployment
 
 on:
   push:
